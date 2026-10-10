@@ -1,0 +1,26 @@
+/* daywitness.com: paper, ink and one green. No external fonts, no scripts. */
+:root{--papel:#f6f3ec;--hoja:#fffdf8;--tinta:#1d2b36;--suave:#55636e;--verde:#2f6b57;--linea:#d9d2c3;--marca:#e9e2d2}
+@media (prefers-color-scheme:dark){:root{--papel:#151b20;--hoja:#1c242a;--tinta:#ebe6dc;--suave:#a8b0b5;--verde:#7fbfa6;--linea:#33404a;--marca:#24303a}}
+*{box-sizing:border-box}
+html{background:var(--papel)}
+body{margin:0;color:var(--tinta);font:17px/1.6 -apple-system,"Segoe UI",system-ui,sans-serif}
+.marco{max-width:760px;margin:0 auto;padding:0 20px}
+header.sello{border-bottom:1px solid var(--linea);background:var(--hoja)}
+header.sello .marco{display:flex;align-items:center;gap:12px;min-height:60px;flex-wrap:wrap}
+header.sello img{width:32px;height:32px;border-radius:8px}
+header.sello a.nombre{font:600 19px/1 Georgia,"Iowan Old Style","Times New Roman",serif;color:var(--tinta);text-decoration:none}
+header.sello nav{margin-left:auto;display:flex;gap:18px;font-size:15px}
+a{color:var(--verde)}
+h1,h2,h3{font-family:Georgia,"Iowan Old Style","Times New Roman",serif;font-weight:600;line-height:1.25}
+h1{font-size:clamp(28px,6vw,40px);margin:44px 0 12px}
+h2{font-size:24px;margin:40px 0 8px;padding-top:12px;border-top:1px solid var(--linea)}
+h3{font-size:18px;margin:26px 0 4px}
+p.entradilla{font-size:19px;color:var(--suave);margin-top:0}
+.libro{width:100%;border-collapse:collapse;background:var(--hoja);border:1px solid var(--linea);font-size:15px;margin:16px 0}
+.libro caption{caption-side:bottom;text-align:left;font-size:13px;color:var(--suave);padding:6px 2px}
+.libro th,.libro td{padding:8px 10px;border-bottom:1px solid var(--linea);text-align:left;vertical-align:top}
+.libro thead th{background:var(--marca);font-weight:600}
+.si{color:var(--verde);font-weight:600}.no{color:var(--suave)}.duda{color:#a86a1d;font-weight:600}
+.tablero{overflow-x:auto}
+dl.reglas dt{font-weight:600;margin-top:14px}dl.reglas dd{margin:2px 0 0 0;color:var(--suave)}
+footer.pie{margin:56px 0 0;border-top:1px solid var(--linea);padding:18px 0 40px;font-size:14px;color:var(--suave)}
